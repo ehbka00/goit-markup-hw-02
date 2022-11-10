@@ -28,6 +28,7 @@ a {
 
 button {
 	border:none;
+	cursor: pointer;
 }
 
 :focus {
@@ -47,6 +48,8 @@ button {
 	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	font-size: 26px;
+	letter-spacing: 0.03em;
+	line-height: 1.2;
 }
 
 .menu-web {
@@ -54,9 +57,11 @@ button {
 	font-weight: 700;
 }
 
-.menu-list {
+.menu-link {
 	font-weight: 500;
 	line-height: 1.6;
+	letter-spacing: 0.02em;
+	color: var(--global-color);
 }
 
 .menu-link:hover,
@@ -68,13 +73,14 @@ button {
 	color: var(--focus-color);
 }
 
-.contact-list a {
+.contact-link {
 	font-weight: 500;
 	color: var(--second-color);
+	letter-spacing: 0.02em;
 }
 
-.contact-list a:hover,
-.contact-list a:focus {
+.contact-link:hover,
+.contact-link:focus {
 	color: var(--focus-color);
 }
 
@@ -130,14 +136,14 @@ button {
 	overflow: hidden;
 }
 
-.projects-list h3 {
+.project-title {
 	font-weight: 700;
 	line-height: 1.1;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
 
-.projects-list p {
+.project-text {
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
@@ -147,14 +153,14 @@ button {
 
 /*------- team ---------*/
 
-.team-list h3 {
+.team-title {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 }
 
-.team-list p {
+.team-text {
 	font-size: 16px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
@@ -174,23 +180,24 @@ footer {
 	font-size: 26px;
 }
 
-.info {
+
+.info-link {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
-}
-
-.info a {
 	color: var(--second-color);
 }
 
 .info a:hover,
 .info a:focus {
-	color: var(--white-text-color);
+	color: var(--focus-color);
 }
 
+.address {
+	color: var(--white-text-color);
+}
 
 
 
@@ -206,23 +213,26 @@ footer {
 	letter-spacing: 0.03em;
 	background: #F5F4FA;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
-.btn-active {
-	background: #2196F3;
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+	background: var(--focus-color);
 	color: var(--white-text-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
-.portfolio-projects h3 {
+
+
+.portfolio-title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 }
 
-.portfolio-projects p {
+.portfolio-text {
 	font-size: 16px;
 	line-height: 1.8;
 	letter-spacing: 0.03em;
