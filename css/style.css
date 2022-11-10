@@ -1,0 +1,230 @@
+/* основной цвет   #212121 */
+/* вторичный цвет #757575 */
+/* доп цвет #FFFFFF и  #FFFFFF99 60% */
+/* акцент #2196F3 */
+
+:root {
+	--global-color: #212121;
+	--focus-color: #2196F3;
+	--second-color: #757575;
+	--white-text-color: #ffffff;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: var(--global-color);
+}
+
+.list {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--global-color);
+}
+
+button {
+	border:none;
+}
+
+:focus {
+	outline: none;
+}
+
+.button {
+	background-color: var(--focus-color);
+	color: var(--white-text-color);
+	font-family: inherit;
+}
+
+/* ---------header -----------*/
+
+
+.menu-logo {
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	font-size: 26px;
+}
+
+.menu-web {
+	color: var(--focus-color);
+	font-weight: 700;
+}
+
+.menu-list {
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.menu-link:hover,
+.menu-link:focus  {
+	color: var(--focus-color);
+}
+
+.active {
+	color: var(--focus-color);
+}
+
+.contact-list a {
+	font-weight: 500;
+	color: var(--second-color);
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+	color: var(--focus-color);
+}
+
+
+/* --------hero------ */
+
+
+.hero {
+	background: #2F303A;
+}
+
+.hero-title {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.4;
+	letter-spacing: 0.06em;
+	color: var(--white-text-color);
+}
+
+.hero-btn {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 0.06em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: #188CE8;
+}
+
+
+/*--------- projects -----------*/
+
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+}
+
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.projects-list h3 {
+	font-weight: 700;
+	line-height: 1.1;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.projects-list p {
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color:var(--second-color);
+}
+
+
+/*------- team ---------*/
+
+.team-list h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+}
+
+.team-list p {
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--second-color);
+}
+
+
+/* -----------footer -------------- */
+
+footer {
+	background: #2F303A;
+}
+
+.footer-logo {
+	font-family: 'Raleway', sans-serif;
+	color: var(--white-text-color);
+	font-size: 26px;
+}
+
+.info {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+}
+
+.info a {
+	color: var(--second-color);
+}
+
+.info a:hover,
+.info a:focus {
+	color: var(--white-text-color);
+}
+
+
+
+
+
+/*--------- PORTFOLIO -------------*/
+
+
+.portfolio-btn {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+	background: #F5F4FA;
+	border-radius: 4px;
+}
+
+.btn-active {
+	background: #2196F3;
+	color: var(--white-text-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.portfolio-projects h3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio-projects p {
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 0.03em;
+	color: var(--second-color);
+}
